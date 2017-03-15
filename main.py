@@ -8,5 +8,5 @@ app.config.from_object(DevConfig)
 def home():
 	return '<h1>Hello</h1>'
 
-if __name__ == '__mian__':
+if __name__ == '__main__':
 	app.run()
