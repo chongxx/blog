@@ -6,3 +6,9 @@ class ProdConfig(Config):
 
 class DevConfig(Config):
 	DEBUG= True
+	# config database uri
+	SQLALCHEMY_DATABASE_URI = 'mysql+mysqlconnector://root:123456@localhost:3306/blog'
+	# show sqlalchemy operate database log
+	SQLALCHEMY_ECHO = True
+
+	SQLALCHEMY_TRACK_MODIFICATIONS = False
